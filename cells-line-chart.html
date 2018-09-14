@@ -1,5 +1,6 @@
 <link rel="import" href="../polymer/polymer.html">
 <link rel="import" href="cells-line-chart-styles.html">
+<link rel="import" href="../highcharts-chart/highcharts-chart.html">
 <!--
 `<cells-line-chart>` description.
 
@@ -31,7 +32,7 @@ The following custom properties and mixins are available for styling:
     <style include="cells-line-chart-styles cells-line-chart-shared-styles"></style>
     <slot></slot>
 
-    <p>Welcome to Cells</p>
+    <highcharts-chart type="spline" data='[[points]]' title='[[title]]' x-zoom x-label="[[xLabel]]" y-label="[[yLabel]]"></highcharts-chart>
 
   </template>
   <script src="cells-line-chart.js"></script>
